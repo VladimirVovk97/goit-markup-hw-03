@@ -1,0 +1,156 @@
+/* variables */
+:root {
+  --first-text-color: #212121;
+  --background-color: #fff;
+  --pretty-color: #2196f3;
+  --while-color: #ffffff;
+  --link-color: #757575;
+  --sectionfooter-color: #2f303a;
+  --accent-font: Raleway, sans-serif;
+  --main-font: Roboto, sans-serif;
+  --accent-color: #2196f3;
+  --footer-color: rgba(255, 255, 255, 0.6);
+}
+body {
+  background-color: var(--background-color);
+  color: var(--first-text-color);
+  font-family: var(--main-font);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1, 71;
+}
+.class-logo {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1, 19;
+  text-decoration: none;
+}
+/* header */
+.header {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1, 14;
+}
+/* header */
+.link {
+  color: var(--first-text-color);
+  text-decoration: none;
+}
+.link:hover,
+.link:focus,
+.link-active {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.second-link {
+  color: var(--link-color);
+  text-decoration: none;
+}
+.second-link:hover,
+.second-link:focus {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+/* header */
+
+/* секции */
+.intro-head {
+  background-color: var(--sectionfooter-color);
+  text-align: center;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1, 36;
+  color: var(--while-color);
+}
+/* секции */
+/*  navList  */
+
+.nav-List:hover,
+.nav-List:focus {
+  color: var(--pretty-color);
+  font-size: 14px;
+}
+/* navList  */
+
+/* auth nav */
+.auth-nav-List:hover,
+.auth-nav-List:focus {
+  color: var(--pretty-color);
+  font-size: 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+}
+/* auth Nav */
+
+.feature-list {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+}
+/* параграфы */
+.text {
+  font-size: 16px;
+  line-height: 1, 88;
+  color: var(--link-color);
+}
+.text-two {
+  font-size: 16px;
+  line-height: 1, 87;
+  color: var(--link-color);
+}
+.text-three {
+  font-size: 16px;
+  line-height: 1, 19;
+  color: var(--link-color);
+}
+/* параграфы */
+ul {
+  list-style: none;
+}
+/* кнопки */
+.classbutton,
+.classbutton1,
+.classbutton2 {
+  cursor: pointer;
+}
+.classbutton1:hover,
+.classbutton1:focus {
+  color: var(--pretty-color);
+}
+.classbutton2:hover,
+.classbutton2:focus {
+  color: var(--pretty-color);
+}
+/* кнопки */
+/* заголовки */
+.intro-subtitle {
+  font-size: 36px;
+  line-height: 1, 17;
+  text-align: center;
+}
+/* заголовки */
+
+/* adress */
+.adress-list {
+  color: var(--while-color);
+}
+.adress-list :hover,
+.adress-list :focus {
+  color: var(--pretty-color);
+  font-size: 14px;
+  line-height: 1, 71;
+}
+/* adress */
+
+/* footer */
+
+.footer1 {
+  color: var(--footer-color);
+  text-decoration: none;
+}
+
+.class-footer {
+  background-color: var(--sectionfooter-color);
+}
+/* footer */
