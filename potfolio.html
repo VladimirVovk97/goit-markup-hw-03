@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
+<link rel="preconnect" href="https://fonts.gstatic.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"/>
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
+<link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body > 
 <!-- Шапка страницы -->
 <header class="header">
     <div class="container">
-        <a href="" class="class-logo"><span>Web</span>Studio</a>
+        <nav>
+        <span class="logo"> <a href=""><span class="web">Web</span><span class="weblogo">Studio</span></a> </span>
         <ul class="nav-List">
             <li class="item"><a class="link" href="./index.html">Cтудия</a></li>
             <li class="item"><a class="link-active" href="./potfolio.html" >Портфолио</a></li>
@@ -26,90 +28,91 @@
         <li><a href="mailto:info.devstudio.com"class ="second-link">info@devstudio.com</a></li>
         <li><a href="tel:+380961111111"class ="second-link">+38 096 111 11 11</a></li>
     </ul>
-</div>
+    </div>
 </header>
 <main>
     <!-- Секция 1-->
-<section class="work">
-    <h1 class="work-title">Секция 1</h1>
+<section class="section">
     <div class="container">
-<ul>
-    <li>
-        <button type="button" class="classbutton1">Все</button>
-    </li>
-    <li>
-        <button type="button" class="classbutton">Веб-Сайты</button>
-    </li>
-    <li>
-        <button type="button" class="classbutton">Приложения</button>
-    </li>
-    <li>
-        <button type="button" class="classbutton">Дизайн</button>
-    </li>
-    <li>
-        <button type="button" class="classbutton">Маркетинг</button>
-    </li>
-</ul>
-    <ul>
+        <h1>Секция 1</h1>
+        <ul class="filters">
+            <li>
+                <button type="button" class="button1">Все</button>
+            </li>
+            <li>
+                <button type="button" class="button">Веб-Сайты</button>
+            </li>
+            <li>
+                <button type="button" class="button">Приложения</button>
+            </li>
+            <li>
+                <button type="button" class="button">Дизайн</button>
+            </li>
+            <li>
+                <button type="button" class="button">Маркетинг</button>
+            </li>
+        </ul>
+        <ul>
             <img src="./images/img1.jpg" alt="Ноутбук" width="370">
             <h2>Технокряк</h2>
             <p class="text-two">Веб-Сайт</p>
-        </li>
-        <li>
-            <img src="./images/img2.jpg" alt="Постер" width="370">
-            <h2>Постер New Orlean vs Golden Star</h2>
-            <p class="text-two">Дизайн</p>
-        </li>
-        <li>
-            <img src="./images/img3.jpg" alt="Логотип ресторана" width="370">
-            <h2>Ресторан Seafood</h2>
-            <p class="text-two">Приложение</p>
-        </li>
-        <li>
-            <img src="./images/img4.jpg" alt="Наушники" width="370">
-            <h2>Проект Prime</h2>
-            <p class="text-two">Маркетинг</p>
-        </li>
-        <li>
-            <img src="./images/img5.jpg" alt="Коробки" width="370">
-            <h2>Проект Boxes</h2>
-            <p class="text-two">Приложение</p>
-        </li>
-        <li>
-            <img src="./images/img6.jpg" alt="ПК" width="370">
-            <h2>Inspiration has no Borders</h2>
-            <p class="text-two">Веб-сайт</p>
-        </li>
-        <li>
-            <img src="./images/img7.jpg" alt="Книга" width="370">
-            <h2>Издание Limited Edition</h2>
-            <p class="text-two">Дизайн</p>
-        </li>
-        <li>
-            <img src="./images/img8.jpg" alt="Лэйба" width="370"> 
-            <h2>Проект LAB</h2>
-            <p class="text-two">Маркетинг</p>
-        </li>
-        <li>
-            <img src="./images/img9.jpg" alt="Человек работает за компьютером" width="370">
-            <h2>Growing Business</h2>
-            <p class="text-two">Приложение</p>
-        </li>
-    </ul>
-</section>
-</div>
-</main>
-<footer class="class-footer">
-    <a href="" class="class-logo"><span>Web</span>Studio</a>
-    <address class="adress-list">
-        <ul>
-            <li>
-                <p>г. Киев, пр-т Леси Украинки, 26</p>
             </li>
-            <li> <a class="footer1" href="mailto:info@example.com">info@example.com</a></li>
-            <li> <a class="footer1" href="tel:+380991111111">38 099 111 11 11</a></li>
+            <li>
+                <img src="./images/img2.jpg" alt="Постер" width="370">
+                <h2>Постер New Orlean vs Golden Star</h2>
+                <p class="text-two">Дизайн</p>
+            </li>
+            <li>
+                <img src="./images/img3.jpg" alt="Логотип ресторана" width="370">
+                <h2>Ресторан Seafood</h2>
+                <p class="text-two">Приложение</p>
+            </li>
+            <li>
+                <img src="./images/img4.jpg" alt="Наушники" width="370">
+                <h2>Проект Prime</h2>
+                <p class="text-two">Маркетинг</p>
+            </li>
+            <li>
+                <img src="./images/img5.jpg" alt="Коробки" width="370">
+                <h2>Проект Boxes</h2>
+                <p class="text-two">Приложение</p>
+            </li>
+            <li>
+                <img src="./images/img6.jpg" alt="ПК" width="370">
+                <h2>Inspiration has no Borders</h2>
+                <p class="text-two">Веб-сайт</p>
+            </li>
+            <li>
+                <img src="./images/img7.jpg" alt="Книга" width="370">
+                <h2>Издание Limited Edition</h2>
+                <p class="text-two">Дизайн</p>
+            </li>
+            <li>
+                <img src="./images/img8.jpg" alt="Лэйба" width="370">
+                <h2>Проект LAB</h2>
+                <p class="text-two">Маркетинг</p>
+            </li>
+            <li>
+                <img src="./images/img9.jpg" alt="Человек работает за компьютером" width="370">
+                <h2>Growing Business</h2>
+                <p class="text-two">Приложение</p>
+            </li>
         </ul>
-    </address>
-</footer>
+    </div>
+</section>
+</main>
+    <footer class="footer">
+        <div class="container">
+        <span class="logo"> <a href=""><span class="web">Web</span><span class="weblogo">Studio</span></a> </span>
+        <address class="adress-list">
+            <ul>
+                <li>
+                    <p>г. Киев, пр-т Леси Украинки, 26</p>
+                </li>
+                <li> <a class="footer1" href="mailto:info@example.com">info@example.com</a></li>
+                <li> <a class="footer1" href="tel:+380991111111">38 099 111 11 11</a></li>
+        </address>
+        </div>
+    </footer>
 </body>
 </html>
