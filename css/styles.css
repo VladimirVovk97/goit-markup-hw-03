@@ -301,6 +301,7 @@ p {
   padding-top: 6px;
   padding-bottom: 6px;
   margin-right: 8px;
+  cursor: pointer;
   border: 1px solid var(--third-bg-color);
   border-radius: 4px;
   height: 38px;
