@@ -19,6 +19,7 @@ html {
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #2f303a;
   --third-bg-color: #f5f4fa;
+  --border-cards-color: #eeeeee;
 }
 body {
   background-color: var(--primary-bg-color);
@@ -42,7 +43,6 @@ ul {
 }
 /* header */
 .header {
-  border-bottom: inherit;
   height: 80px;
   display: flex;
 }
@@ -100,8 +100,6 @@ ul {
 .auth-nav {
   color: var(--secondary-text-color);
   display: flex;
-  margin-bottom: 0px;
-  margin-top: 0px;
   margin-left: auto;
 }
 
@@ -169,11 +167,12 @@ p {
 /* заголовки */
 
 /* секции */
-
-.section-team {
-  background-color: var(--third-bg-color);
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.section-team {
+  background-color: var(--third-bg-color);
 }
 .section-title {
   color: var(--title-text-color);
@@ -186,11 +185,6 @@ p {
 /* features */
 .feature-list {
   display: flex;
-  justify-content: space-between;
-}
-.feature-list .list {
-  width: 270px;
-  height: 101px;
 }
 
 .feature-list .list + .list {
@@ -222,14 +216,9 @@ p {
 }
 .section-features {
   padding-top: 0;
-  padding-bottom: 94px;
 }
 /* active */
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .activity {
   display: flex;
 }
@@ -253,40 +242,35 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: 200, 50;
-  border: var(--accent-color);
   border-radius: 4px;
   width: 200px;
   height: 50px;
   cursor: pointer;
-  padding: 10, 32, 10, 32;
   border: 1px solid transparent;
 }
 .select {
   display: flex;
-  justify-content: center;
-  margin-top: 0px;
   margin-bottom: 50px;
-  text-align: center;
+  padding-left: 25px;
 }
 .select .link:hover,
+.select .link:focus,
 .select .link:focus .cards .text {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  padding-left: 22px;
-  padding-right: 22px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  margin-right: 8px;
-  border: 1px solid var(--accent-color);
+  letter-spacing: 0.03em;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  height: 38px;
 }
 .select .link {
   display: block;
+}
+.select-button + .select-button {
+  margin-left: 8px;
 }
 .filter-button {
   color: var(--primary-text-color);
@@ -300,7 +284,6 @@ p {
   padding-right: 22px;
   padding-top: 6px;
   padding-bottom: 6px;
-  margin-right: 8px;
   cursor: pointer;
   border: 1px solid var(--third-bg-color);
   border-radius: 4px;
@@ -333,15 +316,17 @@ p {
   padding-bottom: 30px;
   border-top: 0px;
 }
+.card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: var(--primary-bg-color);
+  border-radius: 0px 0px 4px 4px;
+}
 .persons {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  height: 19px;
 }
 .job {
   color: var(--secondary-text-color);
@@ -375,6 +360,7 @@ p {
 .em-tel {
   font-style: normal;
   color: var(--third-text-color);
+  margin-top: 9px;
 }
 .em-tel .link:hover,
 .em-tel .link:focus {
@@ -392,48 +378,45 @@ p {
 /* footer */
 
 /* портфолио  */
-
-.filters {
-  display: flex;
-  margin-bottom: 50px;
-  align-items: center;
-  justify-content: center;
-}
-.filters .link:hover,
-.filters .link:focus .cards .text {
-  color: var(--primary-text-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-}
-.filters .filter1 {
-  color: var(--secondary-text-color);
-  font-weight: 400;
-  font-size: 16;
-  line-height: 1.88;
-  text-align: center;
-  padding: 0px;
-}
 .cards .item {
-  margin: 15px;
+  background: var(--primary-bg-color);
+  border: 1px solid var(--border-cards-color);
+  box-sizing: border-box;
+  margin-right: 27px;
+  margin-bottom: 30px;
+}
+.cards .item + .item {
+  margin-left: ;
 }
 .cards {
-  margin: -15px;
+  width: 1200px;
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0px;
 }
 .item .text {
   letter-spacing: 0.06em;
   font-size: 18px;
   line-height: 2;
+  margin-top: 4px;
+}
+.information {
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.item .filters {
+  letter-spacing: 0.06em;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
 }
 
 .hidden {
-  visibility: hidden;
-  width: 1px;
-  height: 1px;
+  display: none;
 }
 
 a {
+  display: block;
   text-decoration: none;
 }
