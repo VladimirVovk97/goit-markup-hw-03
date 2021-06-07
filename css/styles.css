@@ -251,7 +251,7 @@ p {
 .select {
   display: flex;
   margin-bottom: 50px;
-  padding-left: 25px;
+  justify-content: center;
 }
 .select .link:hover,
 .select .link:focus,
